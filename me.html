@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&amp;family=Oswald:wght@500&amp;family=Roboto+Mono:wght@200&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+
+
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+
+      /* 커서 올릴 시 이미지 크게(모든 이미지 파일에 적용) */
+      img:hover {
+        transform: scale(1.7);
+        transform: scale(1.7);
+        -webkit-transform: scale(1.7); /* 크롬 */
+        -moz-transform: scale(1.7); /* 파이어폭스 */
+        -o-transform: scale(1.7); /* 오페라 */
+        z-index: 1;
+        align-items: center;
+      }
+
+      .card {
+        width: 700px;
+        height: 400px;
+        background-color: rgb(0,166,221);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 50px auto;
+        display: flex;
+        position: relative;
+      }
+
+      .profile {
+        padding: 70px 0 0 60px;
+      }
+
+      .profile img {
+        border: 1px solid #ffff;
+        border-radius: 10px;
+        width: 150px;
+        height: 180px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px 0 0 60px;
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+        color: #eeee;
+      }
+
+      .name {
+        font-weight: 900;
+        font-size: 16px;
+      }
+      .contacts {
+        font-size: 15px;
+        opacity: 0.5;
+        font-family: 'Roboto Mono', monospace;
+        font-style: italic;
+      }
+
+      .daelim{
+        position: absolute;
+        margin: -7% 0 0 50%;
+      }
+
+      .daelim img{
+        width: 800px;
+        height: 500px;
+        transform: scale(1); /* 이미지 사이즈 고정 */
+      }
+
+      .full{
+        width: 200px;
+        height: 60px;
+        bottom: 50px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #008CBA;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 0 0 0px;
+      }
+
+      /* 하단 코멘트 */
+      .comment {
+        font-size: 16px;
+        font-style: italic;
+      }
+    </style>
+
+
+</head>
+<body>
+  <header></header>
+
+  <section class="about">
+    <div class="card">
+      <div class="profile">
+        <img src="images/mimoticon.jpeg">
+      </div>
+      <div class="info" style="position: relative">
+        <div class="name">
+          <p><span>JENNY</span>&nbsp;<span style="color: #ffff;">YEJEE CHO</span></p>
+          <p><span style="color: #ffff;">컴퓨터정보학부</span>&nbsp;<span>20151515</span></p>
+        </div>
+        <div class="contacts" style="color: #ffff;">
+          <p>🎂1995.09.21</p>
+          <p>📞+(82)10-5120-6319</p>
+          <p>📧choyejee14@gmail.com</p>
+        </div>
+        <div class="ranking">
+          <p style="text-align: center; margin-top: auto; font-size: 20px; font-weight: bold; color: #fff;">내 랭킹</p>
+        </div>
+        <div class="ranking">
+          <p style="text-align: center; margin-top: auto; font-size: 20px; font-weight: bold; color: #fff; font-size: 30px;">N 위</p>
+        </div>
+      </div>
+      <div class="daelim" > 
+         <img src="images/symbol3.png">
+      </div>
+    </div>
+  </section>
+
+
+            <section>
+              <article class="footer">
+                <button class="full">수정하기</button>
+                  <!-- 코멘트 -->
+                  <p class="comment">Things that make me happy✨<br>
+                  :knitting, bicycle riding on sunny days, playing the piano, traveling with no plans, and my only Dumi&Bell</p>
+                </article>
+            </section>
